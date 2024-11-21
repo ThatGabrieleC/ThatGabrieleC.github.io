@@ -685,6 +685,12 @@ footer h5 {
   font-size: var(--p-font);
   color: #888888;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  i {
+    font-size: 1.2rem;
+  }
 }
 
 /* Media */
