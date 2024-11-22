@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 14%;
+    padding: 25px 14%;
     z-index: 500;
     background-color: #313131;
   }
@@ -80,13 +80,14 @@
   }
   #home {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 20px);
     background-position: center;
     background-size: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+    margin-top: 20px;
   }
   .home-img img {
     max-width: 100%;
@@ -728,7 +729,7 @@
     }
   }
   
-  .ham-menu label{
+  .ham-menu label, .language-menu label{
     cursor: pointer;
   }
   .ham-menu span {
@@ -738,9 +739,15 @@
     margin: 5px 0;
     transition: all .3s ease-in-out;
   }
-  
-  #ham-check {
+  #ham-check, #language-check {
     display: none;
+  }
+  .menu-btn{
+    padding: 6px 9px;
+    border-radius: 50%;
+    &:hover{
+      background-color: #2e2e2e;
+    }
   }
   .ham-menu input:checked ~ .menu-btn span:nth-child(2){
     opacity: 0;
@@ -751,6 +758,56 @@
   .ham-menu input:checked ~ .menu-btn span:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
   }
+  .language-menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .language-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  .language-button img {
+    width: 30px;
+    height: auto;
+  }
+  .language-button h6{
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: -7px;
+    transition: .3s;
+    span {
+      font-weight: 100;
+      margin-right: -3px;
+      font-size: 1.1rem;
+    }
+  }
+  .language-button a {
+    background: #f3a42e;
+    outline: 2px solid #ff9e0d;
+    position: absolute;
+    opacity: 0;
+    color: var(--main-bg);
+    padding: 1px;
+    border-radius: 2px;
+    top: 100%;
+    left: 0%;
+    line-height: 1.1;
+    transition: .25s;
+  }
+  .language-menu input:checked ~ .language-button a{
+    opacity: 1;
+  }
+  .language-button:hover {
+    h6{
+      color: var(--secondary-color);
+    }
+  }
+
   @media (max-width:800px){
     .ham-menu span {
       display: block;
@@ -779,6 +836,21 @@
     }
     .logo {
       margin-left: 5%;
+    }
+    .language-menu {
+      position: absolute;
+      right: -100%;
+      top: 500%;
+      transition: all .4s;
+      z-index: 600;
+    }
+    .language-menu.open {
+      right: 20%;
+    }
+    .language-button a{
+      white-space: nowrap;
+      left: -60%;
+      padding: 5px 2px;
     }
   }
   
