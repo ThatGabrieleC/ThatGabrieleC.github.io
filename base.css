@@ -845,7 +845,7 @@
       z-index: 600;
     }
     .language-menu.open {
-      right: 20%;
+      right: 130px;
     }
     .language-button a{
       white-space: nowrap;
