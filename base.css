@@ -541,6 +541,7 @@
   /* Contact section */
   #contact {
     min-height: 83vh;
+    width: 100vw;
   }
   .contact-container {
     display: flex;
@@ -612,9 +613,9 @@
     width: 90%;
     display: grid;
     align-items: center;
-    margin: 0 auto;
+    margin: 0;
     img {
-      max-width: 70%;
+      max-width: 100%;
       height: auto;
     }
   }
