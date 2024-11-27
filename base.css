@@ -609,6 +609,7 @@
     margin-left: 10px;
   }
   .contact-img{
+    width: 100%;
     display: grid;
     align-items: center;
     margin: 0 auto;
