@@ -22,6 +22,7 @@
   --p-font: 1rem;
 }
 body {
+  background-image: url("Images/BGpattern.png");
   background-color: var(--main-bg);
 }
 header {
@@ -121,5 +122,13 @@ section {
   }
   .button-section a {
     height: 70px;
+    min-width: 200px;
   }
 }
+
+@media (max-width: 400px) {
+  .title {
+    white-space: normal;
+  }
+}
+
