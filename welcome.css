@@ -35,6 +35,7 @@ header {
 header h1::before {
   content: "";
   color: var(--text-color);
+  font-size: 3rem;
   animation: words 20s infinite;
 }
 header h1::after {
@@ -131,4 +132,5 @@ section {
     white-space: normal;
   }
 }
+
 
