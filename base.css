@@ -594,7 +594,9 @@
         content: '';
         position: absolute;
         bottom: -60%;
-        left: 30%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         color: var(--p-color);
         opacity: 1;
       }
