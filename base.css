@@ -598,18 +598,18 @@
         color: var(--p-color);
         opacity: 1;
       }
-      &[data-status="Click to copy"]::after {
-        content: attr(data-status);
-      }
-      &[data-status="Copied!"]::after {
-        content: 'Copied!';
-      }
-      &[data-status="Clicca per copiare"]::after {
-        content: attr(data-status);
-      }
-      &[data-status="Copiato!"]::after {
-        content: 'Copiato!';
-      }
+    }
+    &[data-status="Click to copy"]::after {
+      content: attr(data-status);
+    }
+    &[data-status="Copied!"]::after {
+      content: 'Copied!';
+    }
+    &[data-status="Clicca per copiare"]::after {
+      content: attr(data-status);
+    }
+    &[data-status="Copiato!"]::after {
+      content: 'Copiato!';
     }
   }
   
@@ -865,5 +865,6 @@
     }
   }
   
+
 
 
