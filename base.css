@@ -594,8 +594,7 @@
         content: '';
         position: absolute;
         bottom: -60%;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 30%;
         color: var(--p-color);
         opacity: 1;
       }
@@ -866,5 +865,6 @@
     }
   }
   
+
 
 
